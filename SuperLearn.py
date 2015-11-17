@@ -1,9 +1,12 @@
 from pylab import zeros, sin, cos, normal, random
 from Tilecoder import numTilings, tilecode
 
-     # initialize weights appropriately here
-     # initialize step size parameter appropriately here
-     # initialize your global list of tile indices here
+# initialize weights appropriately here
+weight = numpy.zeros(121*numTilings)
+# initialize step size parameter appropriately here
+alpha = 0.1/numTilings
+# initialize your global list of tile indices here
+tileIndices = numpy.zeros(numTilings)
     
 def f(x,y):
     # write your linear function approximator here (5 lines or so)
